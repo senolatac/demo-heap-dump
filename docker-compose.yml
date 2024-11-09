@@ -1,0 +1,8 @@
+services:
+  demo-heap-dump-app:
+    build: .
+    container_name: cn-demo-heap-dump-app
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./dumps:/dumps
